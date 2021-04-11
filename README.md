@@ -15,26 +15,12 @@ project due date.
 ## Requirements
 Your game should meet the following minimum criteria:
 
-Special for Summer 2020
-
-- Dynamically render graphical elements that dynamically change, and multiple sounds
--- including one original algorithmically rendered graphical element 
-- Some text must should be rendered from an ASCII string.
--- using a font other than 5x7
-- Graphical rendering must be performed by an interruptable foreground task
--- that sleeps when there is nothing to update
-- The program's behavior must change in response to button presses and the progress of time
--- Sensitivity to time and buttons must be interrupt driven
-
-
-Usual requirements (Not for Spring 2020)
-
 - dynamically render graphical elements that move and change 
--- including one original algorithmically rendered graphical element 
+-- including one original algorithmically rendered graphical element (like a triangle)
 - handle colisions properly with other shapes and area boundaries
-- produce sounds triggered by game events
+- produce sounds triggered by game events (for example a beep when hitting a boundary)
 -- in a manner that does not cause the game to pause
-- communicate with the player using text
+- communicate with the player using text (for example a score)
 - include a state machine written in assembly language
 - respond to user input (from buttons)
 
@@ -80,7 +66,7 @@ Several libraries are provided.
 They can be installed by the default production of Makefile in the repostiory's 
 root directory, or by a "$make install" in each of their subdirs.
 
-- timerLib: Provides code to configure Timer A to generate watchdog timer interrupts at 250 Hz
+- timerLib: Provides code to configure Timer A to generate watchdog timer interrupts at 250 Hz (same as the previous lab)
 
 - p2SwLib: Provides an interrupt-driven driver for the four switches on the LCD board and a demo program illustrating its intended functionality.
 
